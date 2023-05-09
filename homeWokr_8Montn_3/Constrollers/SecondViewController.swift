@@ -89,17 +89,17 @@ extension SecondViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let ff3 = foods[indexPath.row]
+        let food3 = foods[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! CustomTableViewCell
-        cell.foodImg.image = UIImage(named: ff3.foodImg1)
+        cell.foodImg.image = UIImage(named: food3.foodImg1)
         cell.labelBigNameFood.text =  isFiltr ? filtrList[indexPath.row].labelBigNameFood1 : foods[indexPath.row].labelBigNameFood1
-        cell.labelTime.text = ff3.labelTime1
-        cell.labelOtcenka.text = ff3.labelOtcenka1
-        cell.labelCountry.text = ff3.labelCountry1
-        cell.labelTypeFood.text = ff3.labelTypeFood1
-        cell.labelKM.text = ff3.labelKM1
-        cell.labelDelivery.text = ff3.labelDelivery1
-        cell.labelPrice.text = ff3.labelPrice1
+        cell.labelTime.text = food3.labelTime1
+        cell.labelOtcenka.text = food3.labelOtcenka1
+        cell.labelCountry.text = food3.labelCountry1
+        cell.labelTypeFood.text = food3.labelTypeFood1
+        cell.labelKM.text = food3.labelKM1
+        cell.labelDelivery.text = food3.labelDelivery1
+        cell.labelPrice.text = food3.labelPrice1
         return cell
     }
 }
